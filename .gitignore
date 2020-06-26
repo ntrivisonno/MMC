@@ -1,0 +1,15 @@
+# extensions to ignore
+# *.*~ evita las copias de seg de emacs
+
+# omitir otros
+*.*~
+octave-workspace
+
+#---------------------------------------------
+# fractales
+# carpetas
+adscripciones/fractales/Figs/complementarias/*
+
+# archivos
+adscripciones/fractales/Video - Zoom Fractal /Zoom_mandelbrot_800frames_20fps.mp4
+adscripciones/fractales/chats.org
