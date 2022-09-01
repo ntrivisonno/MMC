@@ -1,0 +1,12 @@
+* otro 20200609
+  eficiencia = 1-(#partículas top/#partículas bottom)
+  
+  el tipo de ciclón, la eficiencia está sobre el 90%
+  
+  en el archivo kinematicsCloudProperties
+  mass total = 
+  SOI = cuando empieza a inyectar
+  duration = durante cuanto tiempo
+  parcelpersecond = # real de partículas, parcelas en realidad toma un conjunto de partículas, la idea es q este param anda en el orden de 1e2, si es más se lentifica mucho la corrida
+  d = es el campo de parcela, con una distribución
+* otro
