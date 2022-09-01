@@ -1,0 +1,68 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5.0
+Exec   : topoSet -region air -dict system/topoSetDict.1
+Date   : Jun 09 2020
+Time   : 11:35:05
+Host   : "panacea"
+PID    : 7325
+I/O    : uncollated
+Case   : /home/zeeburg/Documents/CIMEC/Cursos/MMC_sin_GIThub/adscripciones/intercambiador_calor/foam/heatExchanger
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh air for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created cellSet rotorCells
+    Applying source zoneToCell
+    Adding all cells of cellZone cylinder ...
+    Found matching zone cylinder with 108000 cells.
+    cellSet rotorCells now size 108000
+Created faceSet rotorFaces
+    Applying source cellToFace
+    Adding faces according to cellSet rotorCells ...
+    faceSet rotorFaces now size 331200
+Read set faceSet rotorFaces with size 331200
+    Applying source boxToFace
+    Adding faces with centre within boxes 1((-100 -100 0.1) (100 100 0.15))
+    faceSet rotorFaces now size 35714
+Created faceSet rotorBladesFaceSet
+    Applying source faceToFace
+    Adding all faces from faceSet rotorFaces ...
+    faceSet rotorBladesFaceSet now size 35714
+Read set faceSet rotorBladesFaceSet with size 35714
+    Applying source boxToFace
+    Adding faces with centre within boxes 1((-100 0.249 -100) (100 0.251 100))
+    faceSet rotorBladesFaceSet now size 180
+Created faceSet rotorBlades2
+    Applying source faceToFace
+    Adding all faces from faceSet rotorFaces ...
+    faceSet rotorBlades2 now size 35714
+Read set faceSet rotorBlades2 with size 35714
+    Applying source boxToFace
+    Adding faces with centre within boxes 1((0.249 -100 -100) (0.251 100 100))
+    faceSet rotorBlades2 now size 180
+Read set faceSet rotorBladesFaceSet with size 180
+    Applying source faceToFace
+    Adding all faces from faceSet rotorBlades2 ...
+    faceSet rotorBladesFaceSet now size 360
+Created faceZoneSet rotorBlades
+    Applying source setToFaceZone
+    Adding all faces from faceSet rotorBladesFaceSet ...
+    faceZoneSet rotorBlades now size 360
+End
+

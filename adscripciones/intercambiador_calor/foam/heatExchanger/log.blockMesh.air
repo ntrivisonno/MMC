@@ -1,0 +1,123 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5.0
+Exec   : blockMesh -region air
+Date   : Jun 09 2020
+Time   : 11:35:00
+Host   : "panacea"
+PID    : 7323
+I/O    : uncollated
+Case   : /home/zeeburg/Documents/CIMEC/Cursos/MMC_sin_GIThub/adscripciones/intercambiador_calor/foam/heatExchanger
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Generating mesh for region air
+Deleting polyMesh directory
+    "/home/zeeburg/Documents/CIMEC/Cursos/MMC_sin_GIThub/adscripciones/intercambiador_calor/foam/heatExchanger/constant/air/polyMesh"
+Creating block mesh from
+    "/home/zeeburg/Documents/CIMEC/Cursos/MMC_sin_GIThub/adscripciones/intercambiador_calor/foam/heatExchanger/system/air/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 16
+		Number of boundary faces : 22
+		Number of defined boundary faces : 22
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.05
+    Block 0 cell size :
+        i : 0.0166667 .. 0.0166667
+        j : 0.00678587 .. 0.00678587
+        k : 0.0166667 .. 0.0166667
+
+    Block 1 cell size :
+        i : 0.0166667 .. 0.0166667
+        j : 0.00678587 .. 0.00678587
+        k : 0.0166667 .. 0.0166667
+
+    Block 2 cell size :
+        i : 0.0166667 .. 0.0166667
+        j : 0.00678587 .. 0.00678587
+        k : 0.0166667 .. 0.0166667
+
+    Block 3 cell size :
+        i : 0.0166667 .. 0.0166667
+        j : 0.00678587 .. 0.00678587
+        k : 0.0166667 .. 0.0166667
+
+    Block 4 cell size :
+        i : 0.00785268 .. 0.00785268
+        j : 0.00333283 .. 0.00333283
+        k : 0.0166667 .. 0.0166667
+
+    Block 5 cell size :
+        i : 0.00785268 .. 0.00785268
+        j : 0.00333283 .. 0.00333283
+        k : 0.0166667 .. 0.0166667
+
+    Block 6 cell size :
+        i : 0.00785268 .. 0.00785268
+        j : 0.00333283 .. 0.00333283
+        k : 0.0166667 .. 0.0166667
+
+    Block 7 cell size :
+        i : 0.00785268 .. 0.00785268
+        j : 0.00333283 .. 0.00333283
+        k : 0.0166667 .. 0.0166667
+
+    Block 8 cell size :
+        i : 0.00261756 .. 0.00261756
+        j : 0.00261756 .. 0.00261756
+        k : 0.0166667 .. 0.0166667
+
+
+Adding cell zones
+    0	cylinder
+    1	innerCylinder
+
+Writing cell zones as cellSets
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (0.5 0.5 0.5)
+  nPoints: 252991
+  nCells: 243000
+  nFaces: 738900
+  nInternalFaces: 719100
+----------------
+Patches
+----------------
+  patch 0 (start: 719100 size: 10800) name: walls
+  patch 1 (start: 729900 size: 4500) name: inlet
+  patch 2 (start: 734400 size: 4500) name: outlet
+  patch 3 (start: 738900 size: 0) name: blades
+
+End
+

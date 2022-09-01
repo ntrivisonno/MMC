@@ -1,0 +1,6 @@
+
+* 20200609
+  caso clara
+
+  los 2 medios son tratados como fluidos
+* otro

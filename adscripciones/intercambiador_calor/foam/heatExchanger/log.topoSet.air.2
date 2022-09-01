@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5.0
+Exec   : topoSet -region air -dict system/topoSetDict.2
+Date   : Jun 09 2020
+Time   : 11:35:11
+Host   : "panacea"
+PID    : 7327
+I/O    : uncollated
+Case   : /home/zeeburg/Documents/CIMEC/Cursos/MMC_sin_GIThub/adscripciones/intercambiador_calor/foam/heatExchanger
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh air for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created cellSet rotorCells
+    Applying source zoneToCell
+    Adding all cells of cellZone cylinder ...
+    Found matching zone cylinder with 108000 cells.
+    cellSet rotorCells now size 108000
+Read set cellSet rotorCells with size 108000
+    Applying source zoneToCell
+    Adding all cells of cellZone innerCylinder ...
+    Found matching zone innerCylinder with 27000 cells.
+    cellSet rotorCells now size 135000
+Read set cellSet rotorCells with size 135000
+    Applying source boxToCell
+    Adding cells with center within boxes 1((-100 -100 0.1) (100 100 0.15))
+    cellSet rotorCells now size 13500
+Created cellZoneSet rotor
+    Applying source setToCellZone
+    Adding all cells from cellSet rotorCells ...
+    cellZoneSet rotor now size 13500
+End
+
