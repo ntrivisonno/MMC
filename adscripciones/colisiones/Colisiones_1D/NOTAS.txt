@@ -1,0 +1,10 @@
+26/03/2020 - 18:14 
+Franco Pagano
+
+El archivo "simulacion_colisiones.m" tiene una lista de parámetros que se pueden modificar para
+mejorar la calidad de la animación y el cálculo experimental de colisiones al costo de mayor tiempo 
+de iteración (el cálculo analítico siempre es exacto). Dentro del archivo están comentados para 
+poder ir haciendo pruebas.
+
+Adjunto también un paper sobre el tema, y unos links de Youtube. Los más importantes son el primero y
+el segundo. El tercero es un dato interesante sobre este mismo tema pero no comparte del todo el enfoque.
