@@ -25,7 +25,7 @@ addpath('funciones_aux/')
 modo = 1;
 
 %Limites del espacio bidimensional
-data = load('pngdata.txt');
+data = load('/home/zeeburg/Documents/CIMEC/Cursos/MMC/adscripciones/fractales/Video - Zoom Fractal /pngdata.txt');
 
 n = 1;   %elegir frame a graficar
 
