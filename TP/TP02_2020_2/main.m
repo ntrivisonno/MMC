@@ -1,4 +1,4 @@
-% trabajo final matematicas - doctorado 2021
+% ver trabajo final matematicas - doctorado 2021
 clear all; clc; close all
 tStart = tic; 
 
